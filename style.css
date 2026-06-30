@@ -1,0 +1,107 @@
+:root {
+  --bg-color: #f9f7f6;
+  --primary: #000000;
+  --secondary: #d9e4ec;
+  --accent: #f6c6ea;
+  --text-dark: #333;
+  --text-light: #666;
+  --radius: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  color: var(--primary);
+  font-size: 2rem;
+}
+
+form {
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-light);
+}
+
+input, select, button {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #4092da;
+}
+
+.results {
+  margin-top: 2rem;
+}
+
+.results table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.results th, .results td {
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.results .hit {
+  background-color: #d2f8d2;
+}
+
+.results .fault {
+  background-color: #fddede;
+}
+
+.summary {
+  margin-top: 1rem;
+  background: var(--secondary);
+  padding: 1rem;
+  border-radius: var(--radius);
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}

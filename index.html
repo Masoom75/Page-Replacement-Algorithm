@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page Replacement Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Page Replacement Algorithm</h1>
+    </header>
+    <main>
+      <form id="simForm">
+        <div class="form-group">
+          <label for="algo">Select Algorithm</label>
+          <select id="algo">
+            <option value="FIFO">FIFO</option>
+            <option value="LRU">LRU</option>
+            <option value="Optimal">Optimal</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="framesInput">Number of Frames</label>
+          <input type="number" id="framesInput" min="1" placeholder="e.g., 3" required />
+        </div>
+        <div class="form-group">
+          <label for="pagesInput">Page Reference String</label>
+          <input type="text" id="pagesInput" placeholder="e.g., 7 0 1 2 0 3 0 4" required />
+        </div>
+        <button type="button" onclick="runAlgorithm()">Simulate</button>
+      </form>
+
+      <section id="resultArea" class="results hidden">
+        <h2>Simulation Result</h2>
+        <div id="resultTable"></div>
+        <div class="summary" id="summary"></div>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
